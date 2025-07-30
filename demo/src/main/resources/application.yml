@@ -1,0 +1,13 @@
+
+server:
+  port: 8120
+
+application:
+  logFilePath: ${SUPPORT_VOLUME:C:\\software\\Projects\\gbprojectvolume\\}
+  loglevel: INFO
+
+project:
+  volume:
+    volumehome: ${VOLUME_HOME:C:\\software\\Projects\\gbprojectvolume\\}
+    depofolder: ${DEPO_FOLDER:deposs\\}
+    imagesfolder: ${IMAGES_VOLUME:images\\}
