@@ -5,6 +5,8 @@ public class CreditCardAccount extends Account {
     private double creditLimit;
     private double creditBalance;
 
+    private Account2 account2; // Composition: CreditCardAccount has an Account2
+
     // Constructor
     public CreditCardAccount(String accountNumber, String holderName, double creditLimit) {
         super(accountNumber, holderName);
@@ -36,6 +38,11 @@ public class CreditCardAccount extends Account {
     public void displayInfo() {
         displayAccountInfo();
         System.out.println("Credit Balance: " + creditBalance);
+    }
+
+    @Override
+    public void abstractMethod() {
+        System.out.println("Implementing abstract method from Account class in CreditCardAccount");
     }
 }
 

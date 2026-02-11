@@ -12,6 +12,8 @@ public abstract class Account {
         this.holderName = holderName;
     }
 
+    public abstract void abstractMethod();
+
     // Getter for account number
     public String getAccountNumber() {
         return accountNumber;

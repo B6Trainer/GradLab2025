@@ -13,7 +13,7 @@ public class Demonstrate {
 
         System.out.println(); // Print a blank line for separation
 
-        DeliveryPerson deliveryPerson = getDelieryPerson();
+        DeliveryPerson deliveryPerson = getDeliveryPerson();
         deliveryPerson.checkStatus("123");
         deliveryPerson.provideCutlery(2);
 
@@ -21,6 +21,17 @@ public class Demonstrate {
 
         Employee employee = getEmployee();
         employee.giveSalesReport();
+
+
+        /////////////////////
+        EmployeeImpl obj= new EmployeeImpl();
+
+        Cashier obj2 = new Employee2026();
+        DeliveryPerson obj3 = new Employee2026();
+
+        /*
+        1000 bz fun
+         */
 
 
     }
@@ -31,13 +42,16 @@ public class Demonstrate {
     }
 
 
-    private static DeliveryPerson getDelieryPerson() {
-        DeliveryPerson deliveryPerson= new EmployeeImpl();
+    private static DeliveryPerson getDeliveryPerson() {
+        EmployeeImpl deliveryPerson= new EmployeeImpl();
+        //DeliveryPerson deliveryPerson= new EmployeeImpl();
         return deliveryPerson;
     }
 
     private static Cashier getCashier() {
-        Cashier cashierObj= new SpecialCashier();
+        Employee2026 cashierObj= new Employee2026();
+        //EmployeeImpl cashierObj= new EmployeeImpl();
+        //Cashier cashierObj= new EmployeeImpl();
         return cashierObj;
     }
 

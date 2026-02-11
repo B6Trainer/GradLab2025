@@ -3,7 +3,7 @@ package com.bala.practice.corejava.basics.classtypes.enumexample;
 public class EnumExample {
     public static void main(String[] args) {
         // Using an enum constant
-        Day today = Day.MONDAY;
+        SimpleDay today = SimpleDay.MONDAY;
         System.out.println("Today is: " + today);
 
         // Using a switch statement with enums
@@ -23,17 +23,19 @@ public class EnumExample {
                 break;
         }
 
-        // Iterating over all enum constants
-        for (Day day : Day.values()) {
-            System.out.println(day);
-        }
-
         // Comparing enum values
-        Day anotherDay = Day.WEDNESDAY;
+        SimpleDay anotherDay = SimpleDay.WEDNESDAY;
         if (today == anotherDay) {
             System.out.println("Today is Wednesday.");
         } else {
             System.out.println("Today is not Wednesday.");
+        }
+
+
+        // Iterating over all enum constants
+        for (Day day : Day.values()) {
+            System.out.println("Day: "+day);
+            System.out.println("Day Number: "+day.getDayNumber());
         }
     }
 }

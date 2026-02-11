@@ -4,11 +4,11 @@ public class Demonstrate {
 
     public static void main(String[] args) {
 
-        //demonstrateNoEncapsulation();
-       // demonstrateEncapsulation();
+        demonstrateNoEncapsulation();
+        demonstrateEncapsulation();
 
-        DBDetails dbDetails = new DBDetails("123","abc");
-        connectDB(dbDetails);
+//        DBDetails dbDetails = new DBDetails("123","abc");
+//        connectDB(dbDetails);
 
 
     }
@@ -44,7 +44,7 @@ public class Demonstrate {
         // Access and modify fields only through controlled methods
 
         noEncapsulationPerson.setName("Bob");
-        noEncapsulationPerson.setAge(22);
+        noEncapsulationPerson.setAge(25);
         noEncapsulationPerson.setGender("Male");
 
         // Display updated information

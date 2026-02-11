@@ -42,5 +42,10 @@ public class SavingsAccount extends Account {
         displayAccountInfo();
         System.out.println("Current Balance: " + balance);
     }
+
+    @Override
+    public void abstractMethod() {
+        System.out.println("Implementing abstract method from Account class in SavingsAccount");
+    }
 }
 

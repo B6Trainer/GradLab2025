@@ -31,7 +31,7 @@ public class ExceptionHandling {
     }
 
     public static void executingMethod(int number1, int number2)
-            throws CustomException , Custom2Exception{
+            throws  Custom2Exception{
 
         int result = number1/number2;
         if(result >10){

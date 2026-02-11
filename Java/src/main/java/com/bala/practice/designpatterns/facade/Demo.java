@@ -6,6 +6,8 @@ public class Demo {
         Projector projector = new Projector();
         Speakers speakers = new Speakers();
 
+
+        //USER
         HomeTheaterFacade homeTheater = new HomeTheaterFacade(dvdPlayer, projector, speakers);
 
         homeTheater.watchMovie("Inception");
