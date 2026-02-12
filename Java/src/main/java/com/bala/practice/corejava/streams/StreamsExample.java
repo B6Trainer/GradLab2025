@@ -1,10 +1,10 @@
-package com.bala.practice.corejava.Lambda;
+package com.bala.practice.corejava.streams;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LambdaCollectionExample {
+public class StreamsExample {
 
     /*
 
@@ -29,7 +29,7 @@ public class LambdaCollectionExample {
 
     public static void main(String[] args) {
 
-       // simpleList();
+       //simpleList();
         nestedList();
     }
 
@@ -74,6 +74,11 @@ public class LambdaCollectionExample {
         List<String> sentences = Arrays.asList(
                 "Java is powerful",
                 "Streams are useful"
+        );
+
+        List<List<String>> sentencesSplit = Arrays.asList(
+                Arrays.asList( "Java","is","powerful"),
+                Arrays.asList("Streams","are","useful")
         );
 
         System.out.println("------------------Wrong Usage----------------------");

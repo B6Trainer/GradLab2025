@@ -29,13 +29,23 @@ public class MapExample {
 
         System.out.println("------------Start of map -------------------");
         // Iterate through the sampleSet
-        for (Entry<Integer, String> entry : map.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        for (Entry<Integer, String> element : map.entrySet()) {
+            System.out.println("Key: " + element.getKey() + ", Value: " + element.getValue());
         }
         System.out.println("------------End of map -------------------");
         System.out.println();
 
     }
+
+    /*
+        Map{
+            entry{key:1 , value:"Apple"},
+            entry{key:2 , value:"Cherry"},
+            entry{key:3 , value:"Banana"}
+        }
+
+
+     */
 
 }
 

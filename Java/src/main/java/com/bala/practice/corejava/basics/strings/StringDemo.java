@@ -33,8 +33,8 @@ public class StringDemo {
 
     // 1️⃣ String Creation
     static void stringCreationDemo() {
-        String s1 = "Java";
-        String s2 = "Java";
+        String s1 = "Java";//Creates in SCP (String Constant Pool)
+        String s2 = "Java";//Same reference as s1 (SCP)
         String s3 = new String("Java");
 
         System.out.println("s1 == s2 : " + (s1 == s2)); // true (same SCP reference)
@@ -78,9 +78,9 @@ public class StringDemo {
 
     // 5️⃣ intern()
     static void internDemo() {
-        String s1 = new String("PoolDemo");
-        String s2 = s1.intern();
-        String s3 = "PoolDemo";
+        String s1 = new String("PoolDemo"); //Resides in Heap
+        String s2 = s1.intern(); // Transferred from heap to SCP
+        String s3 = "PoolDemo";//Points to the previously transferred string
 
         System.out.println("s2 == s3 : " + (s2 == s3)); // true
     }
@@ -88,12 +88,18 @@ public class StringDemo {
     // 6️⃣ String vs StringBuilder
     static void stringBuilderDemo() {
 
+
         // Inefficient way (String)
         String s = "";
         for (int i = 0; i < 5; i++) {
             s += i;
         }
-        System.out.println("Using String: " + s);
+        System.out.println("Using String: " + s);//12345
+        //1
+        //12
+        //123
+        //1234
+        //12345
 
         // Efficient way (StringBuilder)
         StringBuilder sb = new StringBuilder();
@@ -101,6 +107,7 @@ public class StringDemo {
             sb.append(i);
         }
         System.out.println("Using StringBuilder: " + sb.toString());
+        //12345
     }
 
     // 7️⃣ String Formatting
@@ -114,6 +121,10 @@ public class StringDemo {
 
     // 8️⃣ Multiline String (Java 15+)
     static void multilineDemo() {
+
+        String singleline="Hello there ttttttttttttttttt" +
+                "tttttttttttttttttttttttttttttttttttttttttt" +
+                "ttttttttttttttttttttttttttttttttt";
         String multiline = """
                 This is a
                 multiline

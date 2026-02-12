@@ -8,6 +8,7 @@ public class QueueExample {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
 
+        //FIFO
         // Enqueue elements
         queue.add("Apple");
         queue.add("Banana");

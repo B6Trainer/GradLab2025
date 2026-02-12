@@ -14,14 +14,15 @@ public class ArrayExample {
     public static void main(String[] args) {
 
         primitiveArray();
-        wrapperArray();
-        objectArray();
+        //wrapperArray();
+        //objectArray();
 
     }
 
 
     public static void primitiveArray() {
 
+        int mark1=85;
         int[] marks = {85, 90, 78, 92};
 
         System.out.println("Mark 1 = " + marks[0]);
@@ -37,6 +38,7 @@ public class ArrayExample {
     }
 
     public static void wrapperArray() {
+
 
         Integer[] nums = {10, 20, 30};
         Double[] values = {10.5, 20.8};

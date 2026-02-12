@@ -1,6 +1,7 @@
 package com.bala.practice.corejava.basics.classtypes.enumexample;
 
 public class EnumExample {
+
     public static void main(String[] args) {
         // Using an enum constant
         SimpleDay today = SimpleDay.MONDAY;

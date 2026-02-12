@@ -12,6 +12,12 @@ public class DequeExample {
         deque.addLast("Banana");
         deque.addFirst("Cherry");
 
+        /*
+        "Cherry"
+        "Apple"
+        "Banana"
+         */
+
         printTheList(deque);
 
         // Remove elements from the front and rear
